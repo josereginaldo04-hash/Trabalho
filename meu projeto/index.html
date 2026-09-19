@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>CapacitaLocal - Tecnologia para o Desenvolvimento</title>
 
   <link rel="stylesheet" href="style.css">
@@ -12,6 +14,7 @@
 
   <!-- Cabeçalho / Navegação -->
   <header class="navbar">
+
     <div class="logo">
       <h1>Capacita<span>Local</span></h1>
     </div>
@@ -23,198 +26,350 @@
         <li><a href="#mural">Mural de Oportunidades</a></li>
       </ul>
     </nav>
+
   </header>
+
 
   <!-- Banner Principal -->
   <section class="hero">
+
     <div class="hero-content">
+
       <h2>Capacitação Gratuita e Oportunidades Locais</h2>
+
       <p>
         Aprenda habilidades práticas rapidamente e conecte-se a vagas
         e serviços na sua comunidade.
       </p>
 
-      <a href="#cursos" class="btn-primary">Começar Agora</a>
+      <a href="#cursos" class="btn-primary">
+        Começar Agora
+      </a>
+
     </div>
+
   </section>
+
 
   <!-- ODS Atendidos -->
   <section id="ods" class="container">
-    <h2 class="section-title">Objetivos de Desenvolvimento Sustentável</h2>
+
+    <h2 class="section-title">
+      Objetivos de Desenvolvimento Sustentável
+    </h2>
 
     <div class="grid-ods">
 
       <div class="card-ods">
-        <span class="ods-number">ODS 1</span>
-        <h3>Erradicação da Pobreza</h3>
+
+        <span class="ods-number">
+          ODS 1
+        </span>
+
+        <h3>
+          Erradicação da Pobreza
+        </h3>
+
         <p>
           Geração de renda através do fortalecimento da economia local.
         </p>
+
       </div>
 
+
       <div class="card-ods">
-        <span class="ods-number">ODS 4</span>
-        <h3>Educação de Qualidade</h3>
+
+        <span class="ods-number">
+          ODS 4
+        </span>
+
+        <h3>
+          Educação de Qualidade
+        </h3>
+
         <p>
           Acesso simplificado a microcursos práticos de curta duração.
         </p>
+
       </div>
 
+
       <div class="card-ods">
-        <span class="ods-number">ODS 8</span>
-        <h3>Trabalho Decente</h3>
+
+        <span class="ods-number">
+          ODS 8
+        </span>
+
+        <h3>
+          Trabalho Decente
+        </h3>
+
         <p>
           Inclusão produtiva e visibilidade para trabalhadores autônomos.
         </p>
+
       </div>
 
     </div>
+
   </section>
+
 
   <!-- Módulo de Educação -->
   <section id="cursos" class="container">
-    <h2 class="section-title">Microcursos Rápidos (ODS 4)</h2>
+
+    <h2 class="section-title">
+      Microcursos Rápidos (ODS 4)
+    </h2>
+
 
     <div class="card-curso">
-      <h3>Atendimento ao Cliente e Vendas</h3>
+
+      <h3>
+        Atendimento ao Cliente e Vendas
+      </h3>
 
       <p>
         Aprenda técnicas básicas para prestar um bom atendimento
         e fidelizar clientes em negócios locais.
       </p>
 
-      <div id="quiz-container" class="quiz-box">
+
+      <!-- ============================== -->
+      <!-- PERGUNTA 1 -->
+      <!-- ============================== -->
+
+      <div class="quiz-box">
 
         <p class="pergunta">
-          <strong>Pergunta:</strong>
+
+          <strong>
+            Pergunta 1:
+          </strong>
+
           Qual é a melhor atitude para resolver a reclamação
           de um cliente de forma profissional?
+
         </p>
+
 
         <div class="opcoes">
 
           <label>
-            <input type="radio" name="resposta" value="A">
+
+            <input
+              type="radio"
+              name="pergunta1"
+              value="A"
+            >
+
             Ignorar e esperar que ele se acalme sozinho.
+
           </label>
 
+
           <label>
-            <input type="radio" name="resposta" value="B">
+
+            <input
+              type="radio"
+              name="pergunta1"
+              value="B"
+            >
+
             Escutar com atenção, demonstrar empatia e propor uma solução rápida.
+
           </label>
 
+
           <label>
-            <input type="radio" name="resposta" value="C">
+
+            <input
+              type="radio"
+              name="pergunta1"
+              value="C"
+            >
+
             Discutir para provar que a empresa está certa.
+
           </label>
 
         </div>
 
-        <button id="btn-validar" class="btn-secondary" type="button">
+
+        <button
+          class="btn-secondary btn-validar"
+          type="button"
+          data-pergunta="pergunta1"
+          data-resposta="B"
+        >
+
           Enviar Resposta
+
         </button>
 
-        <div id="quiz-resultado" class="feedback"></div>
+
+        <div class="feedback"></div>
 
       </div>
-    </div>
-  </section>
 
-<section id="cursos" class="container">
-    <h2 class="section-title">Microcursos Rápidos (ODS 4)</h2>
 
-    <div class="card-curso">
-      <h3>Atendimento ao Cliente e Vendas</h3>
+      <!-- ============================== -->
+      <!-- PERGUNTA 2 -->
+      <!-- ============================== -->
 
-      <p>
-        Aprenda técnicas básicas para prestar um bom atendimento
-        e fidelizar clientes em negócios locais.
-      </p>
-
-      <div id="quiz-container" class="quiz-box">
+      <div class="quiz-box">
 
         <p class="pergunta">
-          <strong>Pergunta:</strong>
-          Qual é a melhor atitude para resolver a reclamação
-          de um cliente de forma profissional?
+
+          <strong>
+            Pergunta 2:
+          </strong>
+
+          Qual é uma boa prática para aumentar as chances de uma venda?
+
         </p>
+
 
         <div class="opcoes">
 
           <label>
-            <input type="radio" name="resposta" value="A">
-            Ignorar e esperar que ele se acalme sozinho.
+
+            <input
+              type="radio"
+              name="pergunta2"
+              value="A"
+            >
+
+            Ouvir as necessidades do cliente e apresentar um produto adequado.
+
           </label>
 
-          <label>
-            <input type="radio" name="resposta" value="B">
-            Escutar com atenção, demonstrar empatia e propor uma solução rápida.
-          </label>
 
           <label>
-            <input type="radio" name="resposta" value="C">
-            Discutir para provar que a empresa está certa.
+
+            <input
+              type="radio"
+              name="pergunta2"
+              value="B"
+            >
+
+            Insistir para que o cliente compre qualquer produto.
+
+          </label>
+
+
+          <label>
+
+            <input
+              type="radio"
+              name="pergunta2"
+              value="C"
+            >
+
+            Evitar explicar as características do produto.
+
           </label>
 
         </div>
 
-        <button id="btn-validar" class="btn-secondary" type="button">
+
+        <button
+          class="btn-secondary btn-validar"
+          type="button"
+          data-pergunta="pergunta2"
+          data-resposta="A"
+        >
+
           Enviar Resposta
+
         </button>
 
-        <div id="quiz-resultado" class="feedback"></div>
+
+        <div class="feedback"></div>
 
       </div>
-    </div>
-  </section>
 
-<section id="cursos" class="container">
-    <h2 class="section-title">Microcursos Rápidos (ODS 4)</h2>
 
-    <div class="card-curso">
-      <h3>Atendimento ao Cliente e Vendas</h3>
+      <!-- ============================== -->
+      <!-- PERGUNTA 3 -->
+      <!-- ============================== -->
 
-      <p>
-        Aprenda técnicas básicas para prestar um bom atendimento
-        e fidelizar clientes em negócios locais.
-      </p>
-
-      <div id="quiz-container" class="quiz-box">
+      <div class="quiz-box">
 
         <p class="pergunta">
-          <strong>Pergunta:</strong>
-          Qual é a melhor atitude para resolver a reclamação
-          de um cliente de forma profissional?
+
+          <strong>
+            Pergunta 3:
+          </strong>
+
+          O que é importante fazer após realizar uma venda?
+
         </p>
+
 
         <div class="opcoes">
 
           <label>
-            <input type="radio" name="resposta" value="A">
-            Ignorar e esperar que ele se acalme sozinho.
+
+            <input
+              type="radio"
+              name="pergunta3"
+              value="A"
+            >
+
+            Esquecer o cliente depois que o pagamento for realizado.
+
           </label>
 
-          <label>
-            <input type="radio" name="resposta" value="B">
-            Escutar com atenção, demonstrar empatia e propor uma solução rápida.
-          </label>
 
           <label>
-            <input type="radio" name="resposta" value="C">
-            Discutir para provar que a empresa está certa.
+
+            <input
+              type="radio"
+              name="pergunta3"
+              value="B"
+            >
+
+            Evitar qualquer contato futuro com o cliente.
+
+          </label>
+
+
+          <label>
+
+            <input
+              type="radio"
+              name="pergunta3"
+              value="C"
+            >
+
+            Manter um bom relacionamento e buscar saber se o cliente ficou satisfeito.
+
           </label>
 
         </div>
 
-        <button id="btn-validar" class="btn-secondary" type="button">
+
+        <button
+          class="btn-secondary btn-validar"
+          type="button"
+          data-pergunta="pergunta3"
+          data-resposta="C"
+        >
+
           Enviar Resposta
+
         </button>
 
-        <div id="quiz-resultado" class="feedback"></div>
+
+        <div class="feedback"></div>
 
       </div>
+
     </div>
+
   </section>
+
 
   <!-- Mural de Oportunidades -->
   <section id="mural" class="container">
@@ -223,15 +378,26 @@
       Mural de Oportunidades (ODS 1 & 8)
     </h2>
 
+
     <div class="mural-layout">
 
-      <!-- Formulário -->
-      <form id="form-vaga" class="form-box">
 
-        <h3>Divulgar Serviço ou Vaga</h3>
+      <!-- Formulário -->
+      <form
+        id="form-vaga"
+        class="form-box"
+      >
+
+        <h3>
+          Divulgar Serviço ou Vaga
+        </h3>
+
 
         <div class="form-group">
-          <label for="titulo">Título do Serviço / Vaga:</label>
+
+          <label for="titulo">
+            Título do Serviço / Vaga:
+          </label>
 
           <input
             type="text"
@@ -239,20 +405,43 @@
             placeholder="Ex: Assistente de Vendas, Pintor, Reparos"
             required
           >
+
         </div>
 
-        <div class="form-group">
-          <label for="categoria">Categoria:</label>
 
-          <select id="categoria" required>
-            <option value="Atendimento">Atendimento / Vendas</option>
-            <option value="Serviços Gerais">Serviços Gerais</option>
-            <option value="Tecnologia">Tecnologia Básica</option>
+        <div class="form-group">
+
+          <label for="categoria">
+            Categoria:
+          </label>
+
+          <select
+            id="categoria"
+            required
+          >
+
+            <option value="Atendimento">
+              Atendimento / Vendas
+            </option>
+
+            <option value="Serviços Gerais">
+              Serviços Gerais
+            </option>
+
+            <option value="Tecnologia">
+              Tecnologia Básica
+            </option>
+
           </select>
+
         </div>
 
+
         <div class="form-group">
-          <label for="contato">Contato (WhatsApp / E-mail):</label>
+
+          <label for="contato">
+            Contato (WhatsApp / E-mail):
+          </label>
 
           <input
             type="text"
@@ -260,33 +449,59 @@
             placeholder="Ex: (81) 99999-9999"
             required
           >
+
         </div>
 
-        <button type="submit" class="btn-primary">
+
+        <button
+          type="submit"
+          class="btn-primary"
+        >
+
           Publicar Oportunidade
+
         </button>
 
       </form>
 
+
       <!-- Lista de oportunidades -->
       <div class="lista-box">
 
-        <h3>Oportunidades Disponíveis</h3>
+        <h3>
+          Oportunidades Disponíveis
+        </h3>
 
-        <div id="lista-oportunidades" class="grid-vagas">
+
+        <div
+          id="lista-oportunidades"
+          class="grid-vagas"
+        >
+
           <!-- Renderizado via JavaScript -->
+
         </div>
 
       </div>
 
     </div>
+
   </section>
 
+
+  <!-- Rodapé -->
   <footer>
-    <p>&copy; 2026 CapacitaLocal - Projeto ODS | Solução Digital</p>
+
+    <p>
+      &copy; 2026 CapacitaLocal - Projeto ODS | Solução Digital
+    </p>
+
   </footer>
 
+
+  <!-- JavaScript -->
   <script src="script.js"></script>
 
 </body>
+
 </html>

@@ -6,16 +6,29 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+
+/* ============================== */
+/* CORES DO SITE */
+/* ============================== */
+
 :root {
-  --bg-primary: #121212;
-  --bg-secondary: #1e1e1e;
-  --bg-card: #252525;
-  --text-main: #f5f5f5;
-  --text-muted: #b0b0b0;
-  --accent-color: #e50914; /* Vermelho vibrante */
+  --bg-primary: #ffffff;
+  --bg-secondary: #f5f5f5;
+  --bg-card: #ffffff;
+
+  --text-main: #222222;
+  --text-muted: #666666;
+
+  --accent-color: #e50914;
   --accent-hover: #b20710;
-  --border-color: #333333;
+
+  --border-color: #dddddd;
 }
+
+
+/* ============================== */
+/* CONFIGURAÇÕES GERAIS */
+/* ============================== */
 
 body {
   background-color: var(--bg-primary);
@@ -23,218 +36,429 @@ body {
   line-height: 1.6;
 }
 
-/* Navbar */
+
+/* ============================== */
+/* NAVBAR */
+/* ============================== */
+
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
   padding: 1.2rem 8%;
+
   background-color: var(--bg-secondary);
+
   border-bottom: 2px solid var(--accent-color);
+
   position: sticky;
   top: 0;
+
   z-index: 100;
 }
+
 
 .logo h1 {
   font-size: 1.6rem;
 }
 
+
 .logo span {
   color: var(--accent-color);
 }
 
+
 .navbar ul {
   display: flex;
+
   list-style: none;
+
   gap: 20px;
 }
 
+
 .navbar a {
   color: var(--text-main);
+
   text-decoration: none;
+
   font-weight: 500;
+
   transition: color 0.3s;
 }
+
 
 .navbar a:hover {
   color: var(--accent-color);
 }
 
-/* Hero Section */
+
+/* ============================== */
+/* HERO */
+/* ============================== */
+
 .hero {
-  background: linear-gradient(180deg, var(--bg-secondary) 0%, var(--bg-primary) 100%);
+  background: linear-gradient(
+    180deg,
+    #f5f5f5 0%,
+    #ffffff 100%
+  );
+
   text-align: center;
+
   padding: 4rem 1rem;
 }
 
+
 .hero h2 {
   font-size: 2.5rem;
+
   margin-bottom: 1rem;
+
+  color: var(--text-main);
 }
+
 
 .hero p {
   color: var(--text-muted);
+
   max-width: 600px;
+
   margin: 0 auto 2rem;
 }
 
-/* Containers e Layout */
+
+/* ============================== */
+/* CONTAINERS */
+/* ============================== */
+
 .container {
   padding: 4rem 8%;
 }
 
+
 .section-title {
   text-align: center;
+
   font-size: 2rem;
+
   margin-bottom: 2.5rem;
+
   position: relative;
+
+  color: var(--text-main);
 }
+
 
 .section-title::after {
   content: '';
+
   display: block;
+
   width: 60px;
+
   height: 3px;
+
   background-color: var(--accent-color);
+
   margin: 10px auto 0;
 }
 
-/* Grid ODS */
+
+/* ============================== */
+/* CARDS ODS */
+/* ============================== */
+
 .grid-ods {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+  grid-template-columns:
+    repeat(auto-fit, minmax(250px, 1fr));
+
   gap: 20px;
 }
 
+
 .card-ods {
   background-color: var(--bg-card);
+
   padding: 1.5rem;
+
   border-radius: 8px;
+
+  border: 1px solid var(--border-color);
+
   border-top: 4px solid var(--accent-color);
+
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
 }
+
 
 .ods-number {
   font-size: 0.85rem;
+
   font-weight: bold;
+
   color: var(--accent-color);
+
   text-transform: uppercase;
 }
 
+
 .card-ods h3 {
   margin: 0.5rem 0;
+
+  color: var(--text-main);
 }
 
-/* Módulo de Cursos & Quiz */
+
+.card-ods p {
+  color: var(--text-muted);
+}
+
+
+/* ============================== */
+/* CURSOS E QUIZ */
+/* ============================== */
+
 .card-curso {
   background-color: var(--bg-card);
+
   padding: 2rem;
+
   border-radius: 8px;
+
   border: 1px solid var(--border-color);
+
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
 }
+
+
+.card-curso h3 {
+  color: var(--text-main);
+
+  margin-bottom: 0.5rem;
+}
+
+
+.card-curso > p {
+  color: var(--text-muted);
+}
+
 
 .quiz-box {
   margin-top: 1.5rem;
+
   background-color: var(--bg-secondary);
+
   padding: 1.5rem;
+
   border-radius: 6px;
+
+  border: 1px solid var(--border-color);
 }
+
+
+.pergunta {
+  color: var(--text-main);
+
+  margin-bottom: 1rem;
+}
+
 
 .opcoes label {
   display: block;
+
   margin: 10px 0;
+
   cursor: pointer;
+
+  color: var(--text-main);
 }
+
 
 .feedback {
   margin-top: 1rem;
+
   font-weight: bold;
 }
 
-/* Form e Mural */
+
+/* ============================== */
+/* FORMULÁRIO E MURAL */
+/* ============================== */
+
 .mural-layout {
   display: grid;
+
   grid-template-columns: 1fr 1fr;
+
   gap: 30px;
 }
 
+
 @media (max-width: 768px) {
+
   .mural-layout {
     grid-template-columns: 1fr;
   }
+
 }
 
-.form-box, .lista-box {
+
+.form-box,
+.lista-box {
   background-color: var(--bg-card);
+
   padding: 1.5rem;
+
   border-radius: 8px;
+
   border: 1px solid var(--border-color);
+
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
 }
+
+
+.form-box h3,
+.lista-box h3 {
+  color: var(--text-main);
+
+  margin-bottom: 1rem;
+}
+
 
 .form-group {
   margin-bottom: 1.2rem;
 }
 
+
 .form-group label {
   display: block;
-  margin-bottom: 0.5rem;
-}
 
-.form-group input, .form-group select {
-  width: 100%;
-  padding: 0.8rem;
-  border-radius: 4px;
-  border: 1px solid var(--border-color);
-  background-color: var(--bg-primary);
+  margin-bottom: 0.5rem;
+
   color: var(--text-main);
 }
 
+
+.form-group input,
+.form-group select {
+  width: 100%;
+
+  padding: 0.8rem;
+
+  border-radius: 4px;
+
+  border: 1px solid var(--border-color);
+
+  background-color: #ffffff;
+
+  color: var(--text-main);
+}
+
+
+.form-group input:focus,
+.form-group select:focus {
+  outline: none;
+
+  border-color: var(--accent-color);
+}
+
+
+/* ============================== */
+/* CARDS DE OPORTUNIDADES */
+/* ============================== */
+
 .grid-vagas {
   display: flex;
+
   flex-direction: column;
+
   gap: 15px;
+
   margin-top: 1rem;
 }
 
+
 .card-vaga {
   background-color: var(--bg-secondary);
+
   padding: 1rem;
+
   border-left: 4px solid var(--accent-color);
+
   border-radius: 4px;
+
+  border-top: 1px solid var(--border-color);
+
+  border-right: 1px solid var(--border-color);
+
+  border-bottom: 1px solid var(--border-color);
 }
+
 
 .card-vaga h4 {
   color: var(--text-main);
 }
 
+
 .card-vaga span {
   font-size: 0.85rem;
+
   color: var(--text-muted);
 }
 
-/* Botões */
-.btn-primary, .btn-secondary {
+
+/* ============================== */
+/* BOTÕES */
+/* ============================== */
+
+.btn-primary,
+.btn-secondary {
   display: inline-block;
+
   background-color: var(--accent-color);
-  color: #fff;
+
+  color: #ffffff;
+
   border: none;
+
   padding: 0.8rem 1.5rem;
+
   border-radius: 4px;
+
   font-weight: bold;
+
   cursor: pointer;
+
   text-decoration: none;
+
   transition: background-color 0.3s;
 }
 
-.btn-primary:hover, .btn-secondary:hover {
+
+.btn-primary:hover,
+.btn-secondary:hover {
   background-color: var(--accent-hover);
 }
 
+
+/* ============================== */
+/* RODAPÉ */
+/* ============================== */
+
 footer {
   text-align: center;
+
   padding: 2rem;
+
   background-color: var(--bg-secondary);
+
   border-top: 1px solid var(--border-color);
+
   color: var(--text-muted);
+
   font-size: 0.9rem;
 }
