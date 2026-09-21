@@ -38,7 +38,7 @@ body {
 
 
 /* ============================== */
-/* NAVBAR */
+/* NAVBAR AJUSTADA */
 /* ============================== */
 
 .navbar {
@@ -46,7 +46,7 @@ body {
   justify-content: space-between;
   align-items: center;
 
-  padding: 1.2rem 8%;
+  padding: 1.2rem 2%; /* Reduzido o padding lateral para puxar a logo mais pro canto */
 
   background-color: var(--bg-secondary);
 
@@ -59,6 +59,18 @@ body {
 }
 
 
+.logo-link {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+
+.logo-link:hover {
+  transform: scale(1.04);
+}
+
+
 .logo h1 {
   font-size: 1.6rem;
 }
@@ -66,6 +78,11 @@ body {
 
 .logo span {
   color: var(--accent-color);
+  transition: color 0.3s ease;
+}
+
+.logo-link:hover span {
+  color: var(--accent-hover);
 }
 
 
@@ -130,11 +147,24 @@ body {
 
 
 /* ============================== */
-/* CONTAINERS */
+/* CONTAINERS & SEÇÃO ODS */
 /* ============================== */
 
 .container {
   padding: 4rem 8%;
+}
+
+/* Puxa a seção ODS e o título para o canto esquerdo */
+.ods-container {
+  padding-left: 3%;
+}
+
+.ods-title {
+  text-align: left;
+}
+
+.ods-title::after {
+  margin: 10px 0 0 0;
 }
 
 
@@ -167,7 +197,7 @@ body {
 
 
 /* ============================== */
-/* CARDS ODS */
+/* CARDS ODS INTERATIVOS */
 /* ============================== */
 
 .grid-ods {
@@ -192,6 +222,15 @@ body {
   border-top: 4px solid var(--accent-color);
 
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+
+  cursor: pointer;
+
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-ods:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 12px rgba(229, 9, 20, 0.15);
 }
 
 
@@ -215,6 +254,27 @@ body {
 
 .card-ods p {
   color: var(--text-muted);
+}
+
+.dica-clique {
+  display: block;
+  font-size: 0.75rem;
+  color: var(--accent-color);
+  font-weight: bold;
+  margin-top: 0.8rem;
+}
+
+.ods-detalhes {
+  display: none;
+  margin-top: 0.8rem;
+  padding-top: 0.8rem;
+  border-top: 1px dashed var(--border-color);
+  font-size: 0.85rem;
+  color: var(--text-main);
+}
+
+.card-ods.ativo .ods-detalhes {
+  display: block;
 }
 
 

@@ -1,5 +1,17 @@
 document.addEventListener('DOMContentLoaded', () => {
 
+  // ==============================
+  // 0. INTERAÇÃO NOS CARDS ODS
+  // ==============================
+
+  const cardsODS = document.querySelectorAll('.card-ods');
+
+  cardsODS.forEach((card) => {
+    card.addEventListener('click', () => {
+      card.classList.toggle('ativo');
+    });
+  });
+
 
   // ==============================
   // 1. LÓGICA DO QUIZ
